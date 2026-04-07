@@ -4,7 +4,7 @@ import { NavLink } from 'react-router';
 
 const NavBar = () => {
     return (
-        <nav className='w-11/12 mx-auto mt-5 mb-5 py-2'>
+        <nav className='w-11/12 mx-auto  mb-5  bg-white shadow-xl  p-5'>
             <div className='flex items-center justify-between'>
                 <div>
                     <span className='text-3xl font-bold '>Book Vibe</span>
