@@ -12,7 +12,7 @@ const NavBar = () => {
 
 
 
-                <div className='flex items-center gap-5'>
+                <div className='flex items-center gap-15'>
                     <NavLink to="/" className={({ isActive }) => isActive ? 'btn border border-green-500  p-4 text-green-500' : ''}> Home </NavLink>
                     <NavLink to="/listed-books" className={({ isActive }) => isActive ? 'btn border border-green-500  p-4 text-green-500' : ''}> Listed Books </NavLink>
                     <NavLink to="/pages-to-read" className={({ isActive }) => isActive ? 'btn border border-green-500  p-4 text-green-500' : ''}> Pages to Read </NavLink>
