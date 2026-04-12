@@ -1,32 +1,22 @@
-import { createBrowserRouter } from "react-router"
-import MainLayout from "../Layout/MainLayout"
-import HomePage from "../pages/Homepage/HomePage"
-import Books from "../pages/books/Books"
-import ErrorMsg from "../components/errorElement/ErrorMsg"
+import { createBrowserRouter } from "react-router";
+import MainLayout from "../layout/MainLayout";
+import Homepage from "../pages/HomePage/Homepage";
+import Books from "../pages/books/Books";
+import ErrorMsg from "./errorElement/ErrorMsg";
 
-export const router = createBrowserRouter([{
-    path: "/",
-    element: <MainLayout></MainLayout>,
-    children: [{
-        index: true,
-        element: <HomePage></HomePage>
-    },
+export const router = createBrowserRouter([
     {
-        path: "/books",
-        element: <Books> </Books>
-    },
-    {
-        path: "/listed-books",
-        element: 'Listed-books'
-    },
-    {
-        path: "/pages-to-read",
-        element: "pages-to-read"
-    },
-    ],
-    errorElement: <ErrorMsg></ErrorMsg>
-},
-{
-    path: "/books",
-    element: 'books'
-}])
+        path: '/',
+        element: <MainLayout />,
+        children: [{
+            index: true,
+            element: <Homepage></Homepage>
+        },
+        {
+            path: "/books",
+            element: <Books></Books>
+        }],
+        errorElement: <ErrorMsg></ErrorMsg>
+    }
+
+])

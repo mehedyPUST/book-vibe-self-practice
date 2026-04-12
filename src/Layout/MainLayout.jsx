@@ -1,14 +1,13 @@
 import React from 'react';
-import NavBar from '../components/shared/NavBar/NavBar';
+import Navbar from '../components/shared/Navbar/Navbar';
 import { Outlet } from 'react-router';
-import HomePage from '../pages/Homepage/HomePage';
 
 const MainLayout = () => {
     return (
         <div>
-            <NavBar></NavBar>
+            <Navbar></Navbar>
             <Outlet>
-                <HomePage></HomePage>
+
             </Outlet>
         </div>
     );

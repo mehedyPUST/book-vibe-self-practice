@@ -1,10 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 
-
-const NavBar = () => {
+const Navbar = () => {
     return (
-        <nav className='w-11/12 mx-auto  mb-5  bg-white shadow-xl  p-5'>
+        <nav className='w-full mx-auto  mb-5  bg-white shadow-xl  py-5 px-10 '>
             <div className='flex items-center justify-between'>
                 <div>
                     <span className='text-3xl font-bold '>Book Vibe</span>
@@ -30,4 +29,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default Navbar;
